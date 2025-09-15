@@ -16,6 +16,23 @@
   align-items: center;
 }
 
+.contact-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.contact-links a {
+  color: #28e9cf;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.contact-links a:hover {
+  color: #18ccb4;
+  transform: scale(1.2);
+}
+
 .contact-form {
   flex: 1 1 400px;
   display: flex;

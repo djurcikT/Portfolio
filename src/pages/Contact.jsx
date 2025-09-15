@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
 import contact from "../images/contact.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function Contact() {
   const form = useRef();
@@ -32,6 +34,23 @@ export default function Contact() {
     <div className="contact-page">
       <div className="contact-container">
         <form ref={form} onSubmit={sendEmail} className="contact-form">
+          <div className="contact-links">
+            <a
+              href="www.linkedin.com/in/djurcikt"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            </a>
+            <a
+              href="https://github.com/djurcikT"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} size="2x" />
+            </a>
+          </div>
+
           <h2>Contact Me</h2>
           <input type="text" name="name" placeholder="Your Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
