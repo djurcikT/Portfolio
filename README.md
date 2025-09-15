@@ -1,7 +1,7 @@
 # 💻 My Portfolio
 
 ## 🌐 Live Demo
-🔗 [djurcikt.netlify.app](https://djurcikt.netlify.app/)]  
+🔗 [djurcikt.netlify.app](https://djurcikt.netlify.app/)
 
 ---
 
