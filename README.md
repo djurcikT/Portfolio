@@ -1,4 +1,4 @@
-# 💻 Tamara Đurčik Portfolio
+# 💻 My Portfolio
 
 ## 🌐 Live Demo
 🔗 [djurcikt.netlify.app](djurcikt.netlify.app)  
