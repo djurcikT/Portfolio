@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import "./Home.css";
-import hand from "../images/hand.png";
+import hand from "../assets/images/hand.png";
 
 export default function Home() {
   const cardVariants = {
@@ -10,16 +10,11 @@ export default function Home() {
 
   const containerVariants = {
     hidden: {},
-    visible: {
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
+    visible: { transition: { staggerChildren: 0.2 } },
   };
 
   return (
     <div className="home-page">
-      {}
       <section className="hero">
         <h1>
           Hi, I'm Tamara{" "}
@@ -31,7 +26,6 @@ export default function Home() {
         </p>
       </section>
 
-      {}
       <section className="about-section">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}

@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import ProjectCard from "../components/ProjectCard";
 import "./Projects.css";
 
-import imgGame from "../images/game.png";
-import imgFortuna from "../images/fortuna.png";
-import imgRossi from "../images/rossi.png";
-import imgCauldron from "../images/cauldron.png";
+import imgGame from "../assets/images/game.png";
+import imgFortuna from "../assets/images/fortuna.png";
+import imgRossi from "../assets/images/rossi.png";
+import imgCauldron from "../assets/images/cauldron.png";
 
 export default function Projects() {
   const projects = [
@@ -39,20 +39,14 @@ export default function Projects() {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
   };
-
   const containerVariants = {
     hidden: {},
-    visible: {
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
+    visible: { transition: { staggerChildren: 0.2 } },
   };
 
   return (
     <div className="projects-page">
       <h2>My Projects</h2>
-
       <motion.div
         className="projects-grid"
         variants={containerVariants}

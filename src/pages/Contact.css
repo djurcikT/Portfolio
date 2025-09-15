@@ -2,37 +2,47 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
+  min-height: 90vh;
   padding: 2rem;
   background-color: #f0fdfa;
 }
 
 .contact-container {
   display: flex;
+  flex-wrap: wrap;
   max-width: 1200px;
   width: 100%;
   gap: 3rem;
-  flex-wrap: wrap;
   align-items: center;
-}
-
-.contact-links {
-  display: flex;
-  gap: 1.5rem;
   justify-content: center;
-  margin-bottom: 1rem;
 }
 
-.contact-links a {
-  color: #28e9cf;
-  transition: transform 0.2s, color 0.2s;
+/* Slika */
+.contact-illustration {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
 }
 
-.contact-links a:hover {
-  color: #18ccb4;
-  transform: scale(1.2);
+.contact-illustration img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  animation: float 4s ease-in-out infinite;
 }
 
+/* Animacija slike */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Forma */
 .contact-form {
   flex: 1 1 400px;
   display: flex;
@@ -43,8 +53,28 @@
 .contact-form h2 {
   font-size: 2rem;
   color: #03396c;
+  text-align: center;
 }
 
+/* Social icons */
+.contact-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-socials a {
+  color: #28e9cf;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.contact-socials a:hover {
+  transform: scale(1.2);
+  color: #18ccb4;
+}
+
+/* Inputs & button */
 .contact-form input,
 .contact-form textarea {
   padding: 0.8rem;
@@ -69,27 +99,21 @@
   background-color: #18ccb4;
 }
 
-.contact-illustration {
-  flex: 1 1 400px;
-  display: flex;
-  justify-content: center;
+/* Status poruka */
+.status {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  margin-top: 0.5rem;
 }
 
-.contact-illustration img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  animation: tilt 4s ease-in-out infinite;
-}
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column-reverse;
+  }
 
-@keyframes tilt {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(3deg);
-  }
-  100% {
-    transform: rotate(0deg);
+  .contact-form h2 {
+    font-size: 1.8rem;
   }
 }
