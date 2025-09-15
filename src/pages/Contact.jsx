@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
 import contact from "../assets/images/contact.png";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
