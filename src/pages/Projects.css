@@ -1,0 +1,17 @@
+.projects-page {
+  padding: 2rem;
+  text-align: center;
+}
+
+.projects-page h2 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
