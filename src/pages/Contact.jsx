@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
 import contact from "../assets/images/contact.png";
@@ -32,12 +32,12 @@ export default function Contact() {
   return (
     <div className="contact-page">
       <div className="contact-container">
-        {/* Slika sa leve strane */}
+        {}
         <div className="contact-illustration">
           <img src={contact} alt="Contact" />
         </div>
 
-        {/* Forma sa desne strane */}
+        {}
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           <div className="contact-socials">
             <a

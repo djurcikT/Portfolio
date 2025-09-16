@@ -17,7 +17,7 @@
   justify-content: center;
 }
 
-/* Slika */
+/* Image */
 .contact-illustration {
   flex: 1 1 400px;
   display: flex;
@@ -31,7 +31,7 @@
   animation: float 4s ease-in-out infinite;
 }
 
-/* Animacija slike */
+/* Animation */
 @keyframes float {
   0%,
   100% {
@@ -99,7 +99,7 @@
   background-color: #18ccb4;
 }
 
-/* Status poruka */
+/* Message */
 .status {
   text-align: center;
   color: green;

@@ -24,7 +24,7 @@ export default function Navbar() {
               key={link.name}
               to={link.path}
               className={location.pathname === link.path ? "active" : ""}
-              onClick={() => setIsOpen(false)} // zatvara meni na klik
+              onClick={() => setIsOpen(false)}
             >
               {link.name}
             </Link>
